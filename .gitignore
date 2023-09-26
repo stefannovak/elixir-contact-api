@@ -24,3 +24,5 @@ contactapi-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+fly.toml

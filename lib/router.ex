@@ -13,7 +13,6 @@ defmodule Contactapi.Router do
 
   plug(:dispatch)
 
-  get "/", do: send_resp(conn, 200, "Hello World")
   post "contact", do: send_resp(conn, 200, Jason.encode!(%{message: "Hello World"}))
 
   match _, do: send_resp(conn, 404, "Not Found")
